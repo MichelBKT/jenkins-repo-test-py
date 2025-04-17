@@ -41,3 +41,10 @@ class TestCalculator:
         with pytest.raises(ZeroDivisionError):
             self.calc.divide(5, 0)
 
+    def test_power(self):
+        assert self.calc.power(2, 3) == 8
+        assert self.calc.power(0, 0) == 1
+        assert self.calc.power(1, 0) == 1
+        assert self.calc.power(-1, 2) == 1
+        assert self.calc.power(2, -3) == 0.125
+        assert self.calc.power(9, 9) == 81

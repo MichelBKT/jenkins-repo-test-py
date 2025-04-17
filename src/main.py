@@ -14,7 +14,7 @@ def main():
     print(f"Soustraction: 10 - 5 = {calc.subtract(10, 5)}")
     print(f"Multiplication: 4 * 6 = {calc.multiply(4, 6)}")
     print(f"Division: 20 / 4 = {calc.divide(20, 4)}")
-
+    print(f"Puissance: 2 ** 3 = {calc.power(2, 3)}")
     print("\nTest terminé avec succès!")
 
 

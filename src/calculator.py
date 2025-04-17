@@ -57,3 +57,7 @@ class Calculator:
         if b == 0:
             raise ZeroDivisionError("Division par zéro impossible")
         return a / b
+
+    def power(self, a, b):
+
+        return a ** b
