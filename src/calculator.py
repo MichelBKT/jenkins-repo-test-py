@@ -57,16 +57,3 @@ class Calculator:
         if b == 0:
             raise ZeroDivisionError("Division par zéro impossible")
         return a / b
-
-    def power(self, a, b):
-        """puissance du premier nombre par le second
-
-        Args:
-            a: premier nombre
-            b: puissance
-
-        returns:
-            puissance de a par b
-
-        """
-        return a ** b
