@@ -40,3 +40,10 @@ class TestCalculator:
         """Test de la division par zéro"""
         with pytest.raises(ZeroDivisionError):
             self.calc.divide(5, 0)
+
+    def test_power(self):
+        """Test de la méthode power"""
+        assert self.calc.power(5, 2) == 25
+        assert self.calc.power(0, 0) == 1
+        assert self.calc.power(1, 0) == 1
+        assert self.calc.power(9, 3) == 729
