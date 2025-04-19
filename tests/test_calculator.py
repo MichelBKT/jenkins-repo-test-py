@@ -48,3 +48,9 @@ class TestCalculator:
         assert self.calc.power(-1, 2) == 1
         assert self.calc.power(2, -3) == 0.125
         assert self.calc.power(9, 9) == 81
+
+    def test_modulo(self):
+        assert self.calc.modulo(10, 3) == 1
+        assert self.calc.modulo(10, 1) == 0
+        assert self.calc.modulo(10, 0) == 10
+        assert self.calc.modulo(10, 10) == 0
