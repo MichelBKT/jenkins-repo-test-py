@@ -6,7 +6,8 @@ all: install
 
 # Installation des dépendances
 install:
-	pip3 install -r requirements.txt
+	pip install pytest==7.3.1
+	pip install pytest-cov==4.1.0
 	@echo "Dépendances installées avec succès!"
 
 # Exécution du programme
