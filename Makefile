@@ -5,9 +5,8 @@
 all: install
 
 # Vérifier si Python et pip sont installés
-check_python:
-	@which python3 || (echo "Python3 n'est pas installé" && exit 1)
-	@which pip3 || (apt-get update && apt-get install -y python3-pip)
+install_python:
+	apt-get update && apt-get install -y python3-pip)
 
 install: check_python
 	pip3 install pytest==7.3.1
